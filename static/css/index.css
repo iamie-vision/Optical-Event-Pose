@@ -749,5 +749,8 @@ a:focus {
   }
 }
 
-
-
+.disabled-link {
+  pointer-events: none;
+  opacity: 0.55;
+  cursor: not-allowed;
+}
