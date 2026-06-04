@@ -764,6 +764,12 @@ a:focus {
   margin: 0 auto;
 }
 
+.teaser-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
 .gif-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
