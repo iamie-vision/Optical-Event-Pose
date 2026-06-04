@@ -750,8 +750,52 @@ a:focus {
 }
 
 
+/* Personal settings */
 .disabled-link {
   pointer-events: none;
   opacity: 0.55;
   cursor: not-allowed;
+}
+
+.teaser-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.gif-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.gif-item {
+  text-align: center;
+}
+
+.gif-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.gif-item p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+  .gif-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gif-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
